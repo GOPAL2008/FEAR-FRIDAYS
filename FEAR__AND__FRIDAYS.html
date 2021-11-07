@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="black">
+<meta charset="utf-8" />
+
+<section class="dare">
+      <H1> WE WILL DIE ONE DAY </H1><br>
+      <h1>BUT THEY WILL NOT!!!</h1>
+      </section>
+    
+
+    <section class="dare2">
+        <div class="drop"></div>
+        <div class="wave"></div>
+    </section>
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css?family=Eater&display=swap');
+    
+    
+    html, body, h1  {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+    
+    }
+    
+    .dare h1 {
+    color: white;
+    font-family: 'Eater', cursive;
+    font-size: 50px;
+    letter-spacing: 20px;
+    }
+    
+    
+    .dare {
+    background-color: red;
+    height: 250px;
+    }
+    
+    
+    
+    .dare2 {
+    background-color: black;
+    height: 250px;
+    }
+    
+    
+    .drop {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -90px;
+    margin: 0 auto;
+    background: red;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-animation-name: drip;
+    -webkit-animation-name: drip;
+    animation-name: drip;
+    -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
+    -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
+    animation-timing-function: cubic-bezier(1,0,.91,.19);
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    }
+    
+    .drop:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height:0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid red;
+    top: -22px;
+    left: 0%;
+    }
+    
+    .wave {
+    position: relative;
+    opacity: 0;
+    top: 0;
+    width: 2px;
+    height: 1px;
+    border: red 7px solid;
+    -moz-border-radius: 300px / 150px;
+    -webkit-border-radius: 300px / 150px;
+    border-radius: 300px / 150px;
+    -moz-animation-name: ripple;
+    -webkit-animation-name: ripple;
+    animation-name: ripple;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    margin: 175px auto;
+    }
+    
+    .wave:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: -5px;
+    left: -5px;
+    width: 2px;
+    height: 1px;
+    border: red 5px solid;
+    -moz-border-radius: 300px / 150px;
+    -webkit-border-radius: 300px / 150px;
+    border-radius: 300px / 150px;
+    -moz-animation-name: ripple-2;
+    -webkit-animation-name: ripple-2;
+    animation-name: ripple-2;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    margin: 175px auto;
+    margin-top: 0px;
+    }
+    
+    @keyframes ripple {
+    from {
+    opacity: 1;
+    }
+    to {
+    width: 600px;
+    height: 300px;
+    border-width: 1px;
+    top: -100px;
+    opacity: 0;
+    }
+    }
+    
+    @keyframes ripple-2 {
+    0% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+    100% {
+    width: 200px;
+    height: 100px;
+    border-width: 1px;
+    top: 100px;
+    left: 200px;
+    }
+    }
+    
+    @keyframes drip {
+    to {
+    top: 190px;
+    }
+    }
+    </style>
+   <style>
+   @import url(https://fonts.googleapis.com/css?family=Special+Elite);
+   .body {
+   font-family: Special Elite,cursive;
+   min-height: 40vh;
+   display: grid;
+   place-items: top;
+   align:center;
+   color: yellow;
+   font-family: Special-Elite;
+   }
+   
+   .glitch {
+   font-size: 8rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   position: relative;
+   top:10;
+   bottom:0;
+   
+   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+   -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+   0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+   
+   animation: glitch 500ms infinite;
+   }
+   
+   .glitch span {
+   position: absolute;
+   top:  0;
+   left: 0;
+   }
+   .glitch span:first-child {
+   animation: glitch 650ms infinite;
+   clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+   transform: translate(-0.025em, -0.0125em);
+   /* color: green; */
+   opacity: 0.8;
+   }
+   
+   .glitch span:last-child {
+   animation: glitch 375ms infinite;
+   clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+   transform: translate(0.0125em, 0.025em);
+   /* color: red; */
+   opacity: 0.8;
+   }
+   @keyframes glitch {
+   0% {
+   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+   -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+   -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+   }
+   14% {
+   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+   -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+   -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+   }
+   15% {
+   text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+   0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+   -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+   }
+   49% {
+   text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+   0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+   -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+   }
+   50% {
+   text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+   0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+   }
+   99% {
+   text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+   0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+   }
+   100% {
+   text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+   -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+   -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+   }
+   }
+   @media (prefers-reduced-motion: reduce) {
+   *,
+   ::before,
+   ::after {
+   animation-delay: -1ms !important;
+   animation-duration: 1ms !important;
+   animation-iteration-count: 1 !important;
+   background-attachment: initial !important;
+   scroll-behavior: auto !important;
+   transition-duration: 0s !important;
+   transition-delay: 0s !important;
+   }
+   }
+   </style>
+   
+   <h1 class="glitch" >
+   <span  align ="center">FEAR & FRIDAYS</span>
+   FEAR & FRIDAYS
+   <span  align="center">FEAR & FRIDAYS</span></h1>
+   <br><br><br><br>
+   <style> 
+   
+   
+   
+   
+   
+   
+   
+   /*set a style for the buttons*/ 
+   
+   button { 
+   
+   background-color: red; 
+   
+   color: white; 
+   
+   padding: 14px 20px; 
+   
+   margin: 8px 0; 
+   
+   border: none; 
+   
+   cursor: pointer; 
+   
+   width: 100%; 
+   
+   } 
+   
+   
+   
+   /* set a hover effect for the button*/ 
+   
+   button:hover { 
+   color:green;
+   opacity: 0.8; 
+   
+   } 
+   
+   
+   
+   /*set extra style for the cancel button*/ 
+   
+   .cancelbtn { 
+   
+   width: auto; 
+   
+   padding: 10px 18px; 
+   
+   background-color: #f44336; 
+   
+   } 
+   
+   
+   
+   /*centre the display image inside the container*/ 
+   
+   .imgcontainer { 
+   
+   text-align: center; 
+   
+   margin: 24px 0 12px 0; 
+   
+   position: relative; 
+   
+   } 
+   
+   
+   
+   /*set image properties*/ 
+   
+   img.avatar { 
+   
+   width: 100%; 
+   
+   border-radius: 100%; 
+   
+   } 
+   
+   
+   
+   /*set padding to the container*/ 
+   
+   .container { 
+   
+   padding: 16px; 
+   
+   } 
+   
+   
+   
+   
+   
+   
+   /*set the Modal background*/ 
+   
+   .modal { 
+   
+   display: none; 
+   
+   position: fixed; 
+   
+   z-index: 1; 
+   
+   left: 0; 
+   
+   top: 0; 
+   
+   width: 100%; 
+   
+   height: 100%; 
+   
+   overflow: auto; 
+   
+   background-color: rgb(0, 0, 0); 
+   
+   background-color: rgba(0, 0, 0, 0.4); 
+   
+   padding-top: 60px; 
+   
+   } 
+   
+   
+   
+   /*style the model content box*/ 
+   
+   .modal-content { 
+   
+   background-color:yellow; 
+   
+   margin: 5% auto 15% auto; 
+   
+   border: 1px solid #888; 
+   
+   width: 80%; 
+   
+   } 
+   
+   
+   
+   /*style the close button*/ 
+   
+   .close { 
+   
+   position: absolute; 
+   
+   right: 25px; 
+   
+   top: 0; 
+   
+   color: #000; 
+   
+   font-size: 35px; 
+   
+   font-weight: bold; 
+   
+   } 
+   
+   
+   
+   .close:hover, 
+   
+   .close:focus { 
+   
+   color: red; 
+   
+   cursor: pointer; 
+   
+   } 
+   
+   
+   
+   /* add zoom animation*/ 
+   
+   .animate { 
+   
+   -webkit-animation: animatezoom 0.6s; 
+   
+   animation: animatezoom 0.6s 
+   
+   } 
+   
+   
+   
+   @-webkit-keyframes animatezoom { 
+   
+   from { 
+   
+   -webkit-transform: scale(0) 
+   
+   } 
+   
+   to { 
+   
+   -webkit-transform: scale(1) 
+   
+   } 
+   
+   } 
+   
+   
+   
+   @keyframes animatezoom { 
+   
+   from { 
+   
+   transform: scale(0) 
+   
+   } 
+   
+   to { 
+   
+   transform: scale(1) 
+   
+   } 
+   
+   } 
+   
+   
+   
+   @media screen and (max-width: 300px) { 
+   
+   span.psw { 
+   
+   display: block; 
+   
+   float: none; 
+   
+   } 
+   
+   .cancelbtn { 
+   
+   width: 100%; 
+   
+   } 
+   
+   } 
+   
+   </style>
+   
+   
+   
+   
+   
+   
+   <h2 align="center"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">CHECK OUT OUR OFTEN UPDATED HORROR STORY</button> </h2>
+   
+   
+   
+   <div id="id01" class="modal"> 
+   
+   
+   
+   <form class="modal-content animate"> 
+   
+   <div class="imgcontainer"> 
+   
+   <meta charset="utf-8" />  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span></meta> 
+   
+   <h1 align="center" ><img src= 
+   
+   "https://lh3.googleusercontent.com/bscJQNh79hg_g9h9uMXHEqsaMU08DDZCI0iwljiMB2JOYvYxaYWKnfujKKlmo7qOIusaE18baPd0yxJUd496znZ4htzTX7INSthEKNoiPpUmQ4Ev5rcz-KBzTD8wYcTHPQ_2d3KQTA=w2400" alt="THE STALKER" class="avatar"> 
+   
+   </div> </h1>
+   
+   
+   <h1 align="center"><font size="7" color="red">THE STALKER</font></h1><br>
+   <h1 align="center"><font size="7" color="black">I was coming home from work Monday night when things first started to be odd. I’m a web editor for my city newspaper and work the evening shift. Usually that’s about 4 p.m. to midnight, but I often stay late if there’s advance work I can do. The city’s a bit of a sprawl, but I live only maybe two miles away from my work, so I just bike to get around.
+   
+   Monday night I left work around 2 a.m. (technically Tuesday morning) and started riding home. I live in a quiet, residential part of town, so it’s unusual for me to see people on my commute home. In a neighborhood of morning office workers, everyone’s home is shuttered and all lights are off by eleven. It’s actually a little eerie sometimes. No cars ever pass through at night and the silence can put you on edge. The heavy trees lining the street block a lot of the moonlight and the streetlamps here are few and far between.
+   
+   I was about three-quarters of a mile from my apartment when I saw a girl standing at an intersection I was approaching. I mean, she was literally standing in the middle of the road. She was wearing a long white dress (my ex used to have one like it to wear to the beach) so she was easy to see in the darkness.
+   
+   As I got closer, I could see that she was leaning forward on two canes and looking around as if she were trying to make out the street signs. The streets around where I live can be confusing, so I braked near her and asked her if she was lost.
+   
+   She used her canes to slowly turn herself to face me and smile. She was actually astonishingly pretty. Really dark eyes and long black hair. But she was weirdly pallid and her arms on the canes were really thin. Like, really thin.
+   
+   I had been guessing she had some sort of disease or disorder from her use of the canes, but as she turned, her dress swept up a bit and I saw that her feet (in sandals) were facing the opposite direction than usual.
+   
+   “No, I’m fine,” she said. Her voice was high and nasal, like someone was pinching her nose. She turned back, her motions kind of robotic and sharp like a bird’s, and started looking up at the street signs again.
+   
+   I was feeling really bad for her at this point. Clearly, this girl had some sort of deformity and was lost alone in the middle of the night. I was hesitant to just leave her in the middle of the street but didn’t want to seem like that creepy guy insisting on talking to her.
+   
+   “Well, you should get out of the street so you don’t get hit by a car,” I said as I got ready to pedal off.
+   
+   “There are never any cars around here at night,” she replied. That made me feel better, that she at least knew where she was. So maybe she was just crazy and not lost.
+   
+   I looked over my shoulder as I biked away, but she was just there in the intersection still, looking around. I didn’t really think much more of it.
+   
+   I was pretty tired when I got home, so I locked my bike up to a sign outside of my building instead of carrying it up the stairs to my apartment like I usually do. (Not typically a good idea in my city, as there are a lot of bike thieves, but I was tired and lazy.)
+   
+   I got up early on Tuesday morning to go meet a friend for breakfast when I saw there was something weird on my bike. I thought it was just that someone had balanced some trash on the seat, but it turned out to these white flowers. Just the top parts, not the stems. I brushed them off and looked down and saw a little pile of uncooked rice by my kickstand.
+   
+   I was kind of grossed out because it looked like a mouse was hoarding it or something (that happened a few times in my parents’ house.) I checked my bike and, once I was convinced that it was mouse-free, I went on my way.
+   
+   Nothing else weird happened on Tuesday.
+   
+   Last night, though, these really random things happened in my apartment. I got home a bit early for me, maybe 11:30, and the doorknob lock on my apartment door was undone. Instead, the deadbolt was locked. I always do the reverse; my deadbolt can be sticky and hard to open. But I assumed I had just subconsciously done it differently that afternoon.
+   
+   When I put my bike down and went into the kitchen for a beer… shit was weird.
+   
+   I live alone, keep in mind. But someone had emptied out the half gallon of milk from my fridge into a mixing bowl on the floor. I tried to turn on the light, but the switch just flicked back and forth. I turned on all my living room lights, got a flashlight and looked back in the kitchen. The lightbulb was shattered in the ceiling fixture. Some of the broken glass was on the floor and some of it was in the bowl of milk.
+   
+   I stepped into the kitchen and there was this squelching noise of my shoe against some sticky liquid on the floor.
+   
+   I noped the fuck out of there and checked every inch of my apartment for signs of an intruder. There wasn’t anything else amiss and there was no one in there. (But let me tell you, pulling back that shower curtain was a terrifying moment.)
+   
+   I brought over a floor lamp and plugged it in so I could see inside the kitchen.
+   
+   That squelchy liquid? Mustard.
+   
+   I don’t even know what to make of this. Does this make sense to anyone?? Someone had literally squirted my bottle of hotdog mustard all over the floor. There were these little rolling things in it. Further investigation showed that the jar of mustard seeds from my spice rack was emptied out everywhere. Little packets were opened and scattered all over my countertops. They were all the random packets of mustard I had lying around from takeout.
+   
+   My kitchen was just a shitshow of mustard and milk.
+   
+   I didn’t call the cops. I don’t know, should I have? What would I have even said? “Hey, guys. Someone apparently got into my apartment, didn’t steal anything, but had a condiment party in my kitchen?”
+   
+   It took forever but I cleaned all that mess up and just went to bed. I locked both locks (and will continue to do so) and shoved a chair under the doorknob. And yeah, I left most of the lights in the house on.
+   
+   So now I’m just getting up for the day. But while I was typing this post up, something else really weird just happened.
+   
+   The security guy (Martin) from my office just called my cell phone. He said that there was a girl who just came into the foyer asking to see me. Martin said that he told her I didn’t usually get in until the afternoon and but said if she told him her name, he’d let me know that she stopped by. She then just gave him a nasty look and left.
+   
+   He said it really creeped him out. His hair was standing on end and he felt cold after she left. He decided to just call me to see if I knew who she was.
+   
+   I asked Martin what she looked like. He said she had long, black hair and was on crutches.</font></h1>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </div> 
+   
+   
+   </form>
+   <script> 
+   
+   var modal = document.getElementById('id01'); 
+   
+   window.onclick = function(event) { 
+   
+   if (event.target == modal) { 
+   
+   modal.style.display = "none"; 
+   
+   } 
+   
+   } 
+   
+   </script> <br><br>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   <script>var ml = { timelines: {}};</script>
+   <style>
+   body {
+   font-family: Special Elite,cursive;
+   background-color: black;
+   color: red;
+   text-align: center;
+   }
+   
+   .moving-letters {
+   position: absolute;
+   top:6;
+   right: 0;
+   left: 0;
+   bottom: 6;
+   margin: auto;
+   height: 0px;
+   font-family: "Indie Flower", cursive; 
+   }
+   </style>
+   
+   
+   
+   
+   <div class="moving-letters">
+   <h4 class="ml12">
+   <font size = "7" color = "purple">EVERYTHING WILL VANISH ONE DAY</h4></font>
+   
+   
+   <!--more-->
+   
+   <script>
+   // Wrap every letter in a span
+   $('.ml12').each(function(){
+   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+   });
+   
+   ml.timelines["ml12"] = anime.timeline({loop: true})
+   .add({
+   targets: '.ml12 .letter',
+   translateX: [40,0],
+   translateZ: 0,
+   opacity: [0,1],
+   easing: "easeOutExpo",
+   duration: 1200,
+   delay: function(el, i) {
+   return 500 + 30 * i;
+   }
+   }).add({
+   targets: '.ml12 .letter',
+   translateX: [0,-30],
+   opacity: [1,0],
+   easing: "easeInExpo",
+   duration: 1100,
+   delay: function(el, i) {
+   return 100 + 30 * i;
+   }
+   });
+   </script>
+   
+   <style>
+   .ml12 {
+   font-weight: 300;
+   font-size: 1.8em;
+   text-transform: uppercase;
+   letter-spacing: 0.5em;
+   }
+   
+   .ml12 .letter {
+   display: inline-block;
+   line-height: 1em;
+   }
+   </style>
+   </h4><br><br><br>
+   <div class ="company">
+  <font size ="5" color ="white">FEAR & FRIDAYS™ is a registered trademark of ©CHATAR~PATAR~SHORTS,INC.</font></div>
+  <style>
+  .company{
+  place-items:bottom;
+  height:1000px;
+  font-family: "Lobster", cursive;
+  }
+  </style></div>
+  
+  <style>
+  
+  @import url('https://fonts.googleapis.com/css?family=Eater&display=swap');
+  
+  
+  html, body, h1  {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  
+  }
+  
+  .dare h1 {
+  color: white;
+  font-family: 'Eater', cursive;
+  font-size: 50px;
+  letter-spacing: 20px;
+  }
+  
+  
+  .dare {
+  background-color: red;
+  height: 250px;
+  }
+  
+  
+  
+  .dare2 {
+  background-color: black;
+  height: 250px;
+  }
+  
+  
+  .drop {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: -90px;
+  margin: 0 auto;
+  background: red;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -moz-animation-name: drip;
+  -webkit-animation-name: drip;
+  animation-name: drip;
+  -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
+  -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
+  animation-timing-function: cubic-bezier(1,0,.91,.19);
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  }
+  
+  .drop:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height:0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 30px solid red;
+  top: -22px;
+  left: 0%;
+  }
+  
+  .wave {
+  position: relative;
+  opacity: 0;
+  top: 0;
+  width: 2px;
+  height: 1px;
+  border: red 7px solid;
+  -moz-border-radius: 300px / 150px;
+  -webkit-border-radius: 300px / 150px;
+  border-radius: 300px / 150px;
+  -moz-animation-name: ripple;
+  -webkit-animation-name: ripple;
+  animation-name: ripple;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  margin: 175px auto;
+  }
+  
+  .wave:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  left: -5px;
+  width: 2px;
+  height: 1px;
+  border: red 5px solid;
+  -moz-border-radius: 300px / 150px;
+  -webkit-border-radius: 300px / 150px;
+  border-radius: 300px / 150px;
+  -moz-animation-name: ripple-2;
+  -webkit-animation-name: ripple-2;
+  animation-name: ripple-2;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  margin: 175px auto;
+  margin-top: 0px;
+  }
+  
+  @keyframes ripple {
+  from {
+  opacity: 1;
+  }
+  to {
+  width: 600px;
+  height: 300px;
+  border-width: 1px;
+  top: -100px;
+  opacity: 0;
+  }
+  }
+  
+  @keyframes ripple-2 {
+  0% {
+  opacity: 1;
+  }
+  50% {
+  opacity: 0;
+  }
+  100% {
+  width: 200px;
+  height: 100px;
+  border-width: 1px;
+  top: 100px;
+  left: 200px;
+  }
+  }
+  
+  @keyframes drip {
+  to {
+  top: 190px;
+  }
+  }
+  </style>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Special+Elite);
+  .body {
+  font-family: Special Elite,cursive;
+  min-height: 40vh;
+  display: grid;
+  place-items: top;
+  align:center;
+  color: yellow;
+  font-family: Special-Elite;
+  }
+  
+  .glitch {
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  top:10;
+  bottom:0;
+  
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+  -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+  0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  
+  animation: glitch 500ms infinite;
+  }
+  
+  .glitch span {
+  position: absolute;
+  top:  0;
+  left: 0;
+  }
+  .glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  /* color: green; */
+  opacity: 0.8;
+  }
+  
+  .glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  /* color: red; */
+  opacity: 0.8;
+  }
+  @keyframes glitch {
+  0% {
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+  -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+  -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+  -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+  -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+  text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+  0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+  -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+  text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+  0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+  -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+  text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+  0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+  text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+  0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+  text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+  -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+  -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  }
+  @media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+  animation-delay: -1ms !important;
+  animation-duration: 1ms !important;
+  animation-iteration-count: 1 !important;
+  background-attachment: initial !important;
+  scroll-behavior: auto !important;
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+  }
+  }
+  </style><br><br><br><br>
+  <style> 
+   
+   
+   
+   
+   
+   
+   
+   /*set a style for the buttons*/ 
+   
+   
+   button { 
+   
+   background-color: red; 
+   
+   color: white; 
+   
+   padding: 14px 20px; 
+   
+   margin: 8px 0; 
+   
+   border: none; 
+   
+   cursor: pointer; 
+   
+   width: 100%; 
+   
+   } 
+   
+   
+   
+   /* set a hover effect for the button*/ 
+   
+   button:hover { 
+   color:green;
+   opacity: 0.8; 
+   
+   } 
+   
+   
+   
+   /*set extra style for the cancel button*/ 
+   
+   .cancelbtn { 
+   
+   width: auto; 
+   
+   padding: 10px 18px; 
+   
+   background-color: #f44336; 
+   
+   } 
+   
+   
+   
+   /*centre the display image inside the container*/ 
+   
+   .imgcontainer { 
+   
+   text-align: center; 
+   
+   margin: 24px 0 12px 0; 
+   
+   position: relative; 
+   
+   } 
+   
+   
+   
+   /*set image properties*/ 
+   
+   img.avatar { 
+   
+   width: 100%; 
+   
+   border-radius: 100%; 
+   
+   } 
+   
+   
+   
+   /*set padding to the container*/ 
+   
+   .container { 
+   
+   padding: 16px; 
+   
+   } 
+   
+   
+   
+   
+   
+   
+   /*set the Modal background*/ 
+   
+   .modal { 
+   
+   display: none; 
+   
+   position: fixed; 
+   
+   z-index: 1; 
+   
+   left: 0; 
+   
+   top: 0; 
+   
+   width: 100%; 
+   
+   height: 100%; 
+   
+   overflow: auto; 
+   
+   background-color: rgb(0, 0, 0); 
+   
+   background-color: rgba(0, 0, 0, 0.4); 
+   
+   padding-top: 60px; 
+   
+   } 
+   
+   
+   
+   /*style the model content box*/ 
+   
+   .modal-content { 
+   
+   background-color:yellow; 
+   
+   margin: 5% auto 15% auto; 
+   
+   border: 1px solid #888; 
+   
+   width: 80%; 
+   
+   } 
+   
+   
+   
+   /*style the close button*/ 
+   
+   .close { 
+   
+   position: absolute; 
+   
+   right: 25px; 
+   
+   top: 0; 
+   
+   color: #000; 
+   
+   font-size: 35px; 
+   
+   font-weight: bold; 
+   
+   } 
+   
+   
+   
+   .close:hover, 
+   
+   .close:focus { 
+   
+   color: red; 
+   
+   cursor: pointer; 
+   
+   } 
+   
+   
+   
+   /* add zoom animation*/ 
+   
+   .animate { 
+   
+   -webkit-animation: animatezoom 0.6s; 
+   
+   animation: animatezoom 0.6s 
+   
+   } 
+   
+   
+   
+   @-webkit-keyframes animatezoom { 
+   
+   from { 
+   
+   -webkit-transform: scale(0) 
+   
+   } 
+   
+   to { 
+   
+   -webkit-transform: scale(1) 
+   
+   } 
+   
+   } 
+   
+   
+   
+   @keyframes animatezoom { 
+   
+   from { 
+   
+   transform: scale(0) 
+   
+   } 
+   
+   to { 
+   
+   transform: scale(1) 
+   
+   } 
+   
+   } 
+   
+   
+   
+   @media screen and (max-width: 300px) { 
+   
+   span.psw { 
+   
+   display: block; 
+   
+   float: none; 
+   
+   } 
+   
+   .cancelbtn { 
+   
+   width: 100%; 
+   
+   } 
+   
+   } 
+   
+   </style>
+   
+   
+   
+   
+   
+   
+   <h2 align="center"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">CHECK OUT OUR OFTEN UPDATED HORROR STORY</button> </h2>
+   
+   
+   
+   <div id="id02" class="modal"> 
+   
+   
+   
+   <form class="modal-content animate"> 
+   
+   <div class="imgcontainer"> 
+   
+   <meta charset="utf-8" />  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span></meta> 
+   
+   <h1 align="center" ><img src= 
+   
+   "https://lh3.googleusercontent.com/Cp_Hlu7v_cG2kBIecR5vNOMrN23ksSAZony77su8_fXbqdw4s_6JKY9j__EEeWDgYsvu3PDNN7QdUF1ud51FrRaeThN4hPVMhQrqRU9ylDHEqeLGCh8STmspcHfFzwoiCtMULIJwUA=w2400" alt="ANNABELLE" class="avatar"> 
+   
+   </div> </h1>
+   
+   
+   <h1 align="center"><font size="7" color="red">THE ANNABELLE DOLL</font></h1><br>
+   <h1 align="center"><font size="7" color="black">The doll in the movie is a frightening looking porcelain doll in a child’s image, with long hair and the real Annabelle — the one in Warren’s museum — is a plain-looking classic Raggedy Ann doll with red yarn for hair.
+   
+   But the Raggedy Ann at the Warren’s Museum is no ordinary doll. According to the Warrens, it is inhabited by an “inhuman spirit,” and there is a warning on the glass case not to touch.
+   
+   One museum-goer who ignored the warnings and taunted the doll, died in a motorcycle crash shortly after being told to leave the museum.The movie is a prequel to “The Conjuring,” based on the Warren’s real-life case involving the doll. The couple had a lot of input in the first movie, but “Annabelle,” is fabricated.
+   
+   Warren, who mostly along with her late husband, has investigated more than 10,000 cases of paranormal activity, presented the talk and slide show of cases at the Catholic girls’ high school with the help of her son-in-law Tony Spera, also a paranormal investigator.
+   
+   Warren, now 87, soft spoken and sweet to all those who engaged her in conversation at a meet and greet, said presenting at Lauralton was like “going home,” because she attended the school in the late 1930s, but had to leave because of illness.
+   
+   Warren said her presentations are in extra demand during September and October because fascination with the subject is heightened during, “Hallow’s Eve,” as she calls it.
+   
+   A Roman Catholic, Warren now and in the early career with her husband, often works with priests and other clergy because they rely on blessings and sometimes exorcism to resolve a case.
+   
+   She said the power of faith has gotten her out of many scary situations because it’s often about fighting the demonic with goodness. Holy water is a tool.Warren said her Catholic faith is both her protection and her drive.
+   
+   Warren began by telling the audience that ever since the age of “7 or 8” she saw lights or auras around people, but was afraid to tell her parents, for fear they would think she was, “crazy.” She spent many years praying about it because, “I didn’t want to be different,” she said.
+   
+   Warren recalled a story from her Lauralton days. She had a favorite teacher, a nun who taught French, and once told her, referring to her aura, “Your lights are brighter than Mother Superior’s.”
+   
+   Warren said she was told to go to the chapel and “pray about it,” and it will go away. Her Lauralton audience, many with no connection to the school, but there as Warren fans, roared with laughter.
+   
+   At first she didn’t even tell Ed Warren, whom she met at 16 about her abilities. But later he would tell her, “You are different.”
+   
+   Ed, a self-taught “demonologist” — an interest he developed after growing up in a house he said was haunted — and Lorraine, would pool their talents and go on to become world-famous paranormal investigators. Her career has spanned 65 years.
+   
+   The Warrens have done jobs throughout the United States and in faraway places that Japan, England, Scotland, France, Australia. The couple charged only travel expenses — nothing for the actual investigating — but built an empire on books, movie work and lectures about their cases. In 1952, Ed Warren founded the New England Society for Psychic Research. Their investigations often included other professionals, including nurses, doctors, police officers, researchers.
+   
+   Some of their famous cases besides Amityville and Annabelle include: the Demon murder; Werewolf; Smurl family; The Perrons; Stepney Cemetery; Borley Church; Union Cemetery; The Haunting in Connecticut.
+   
+   Warren said most unwanted spirits enter through vehicles such as Ouija boards, Tarot Cards and psychics, and urged the audience to keep their kids away from such things. Spera said seven of their 10 cases involves someone with a Ouija board asking, “Is there a spirit here?”
+   
+   “If you go into a very happy home, very seldom,” bad things will be found, Warren said.
+   
+   She and Spera continued the work after Ed’s death in 2006 and are currently working on a haunting case in Stratford, she said. Every town in Connecticut has paranormal activity, Warren said, noting a recent exorcism-like event on a New Haven man, 31.
+   
+   “Going into haunting experiences, there were some bad ones, scary ones. My faith was always my protection,” she said.
+   
+   She said that some five years ago a retiring priest moved into an apartment on her grounds, and not only does he help on jobs, but, “We have mass every day in our house,” she said, adding, “It’s beautiful how God works.”
+   
+   The presentation Friday, which drew lots of audience oohs and ahhs, included a slide show of findings on cases such as images of people from the beyond or ghost-like forms appearing in photographs.
+   
+   Spera spent part of the talk on the eery, real life Annabelle story and emphasized that of all the items in the family’s Occult Museum, “that doll is what I’d be most frightened of.” Curators believe the doll has the power to kill, according to a film on the Annabelle case.
+   
+   Noting the case of the motorcyclist who died after leaving the museum, Spera said, “Never take things like this lightly, thinking it’s a joke.”
+   
+   According to a clip Spera showed, the real-life Annabelle story began in 1970 when a 28-year-old nurse received the Raggedy Ann doll as a birthday gift from her mom. She put the rag doll on her bed and began to notice it changing positions. A leg would be crossed, or the doll would be lying on its side. Then the girl and her roommate began to find parchment paper on the floor with written messages, such as, “Help me, help us.” They had no parchment paper in the house. The doll began appearing in different rooms and at one point appeared to be leaking blood.
+   
+   Then, one day, a male friend was taking a nap and woke up with the doll staring at him, as he felt like he was being strangled. There were deep scratch wounds on his upper body.
+   
+   The girls at first thought maybe an intruder was moving the doll around and leaving notes. When they ruled that out, according to the Occult Museum website, “Not knowing where to turn they contacted a medium and a seance was held.” The girls were introduced to the spirit of Annabelle Higgins, said to be a young girl that resided on the property before the apartments were built and died there at age 7.
+   
+   According to the website, the spirit related to the medium that she felt comfort with the two roommates in the apartment and “wanted to stay with them and be loved.”
+   
+   The roommates gave Annabelle “permission to inhabit the doll,” but things got worse.
+   
+   The Warrens took an interest in the case and contacted the women. They “came to the immediate conclusion that the doll itself was not in fact possessed but manipulated by an inhuman presence,” according to the Warren’s website, which goes on to say, “Truly, the spirit was not looking to stay attached to the doll, it was looking to possess a human host.”
+   
+   Spera said the Warrens took the doll and Ed Warren told his wife they should avoid the highway because he was going to be a rough ride home. He was right. At some point he had to sprinkle the Annabelle doll with Holy water to calm it down.
+   
+   The movie “Annabelle” doesn’t resemble the real-life story. In the movie, the doll is owned by a young couple, given to the woman for her doll collection. As the woman nears her pregnancy due date, a pair of Satanic cultists break in, stab the pregnant woman in the belly, and end up dead in their home. One of the cultists is named Annabelle Higgins, and some of her blood lands on the doll. That’s when the doll starts doing over-the-top scary things.
+   
+   Spera and Warren said they don’t really care that the producers of “Annabelle” fabricated the story for the movie because it still serves the purpose of warning the public about demons.
+   
+   “Eeveryone in the audience who believes in God must also believe there’s a Devil,” Spera said. “Ghosts, devils, demons are real.”
+   
+   He said while most people are focused on the “bad stuff,” regarding ghosts, there are “beautiful stories,” as well, such as the soldier who appeared to visit a loved one. Spera said it’s a “ghost” if it is a stranger appears and an “apparition” if you recognize the person.
+   
+   “The key is don’t open any doors,” Spera said.</font></h1>
+   <script> 
+   
+   var modal = document.getElementById('id02'); 
+   
+   window.onclick = function(event) { 
+   
+   if (event.target == modal) { 
+   
+   modal.style.display = "none"; 
+   
+   } 
+   
+   } 
+   
+   </script> <br><br></form></div>
+  
+ 
+ 
+   </body>
+   </html>
+   </DOCTYPE>
+ 
